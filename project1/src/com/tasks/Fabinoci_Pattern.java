@@ -1,0 +1,17 @@
+package com.tasks;
+
+public class Fabinoci_Pattern {
+public static void main(String[] args) {
+	int n=5;
+	int a=0,b=1;
+	for(int i=0;i<n;i++) {
+		for(int j=0;j<=i;j++) {
+			System.out.print(a+" ");
+			int c=a+b;
+			a=b;
+			b=c;
+		}
+		System.out.println();
+	}
+}
+}
