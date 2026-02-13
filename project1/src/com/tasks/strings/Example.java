@@ -9,15 +9,23 @@ public class Example {
 	
 public static void main(String[] args) {
 	
-	ArrayList<Integer> list = new ArrayList<>(List.of(1,2,3,4));
+//	ArrayList<Integer> list = new ArrayList<>(List.of(1,2,3,4));
+//	
+//	Consumer<Integer> con = new Consumer<>() {
+//		public void accept(Integer i) {
+//			System.out.println(i);
+//		}
+//	};
+//	
+//	list.forEach(con);
+
 	
-	Consumer<Integer> con = new Consumer<>() {
-		public void accept(Integer i) {
-			System.out.println(i);
-		}
-	};
+	String s1 ="book";
+	String s2 = "caae";
 	
-	list.forEach(con);
+	char c1 = s1.charAt(0);
+	System.out.println(s1.indexOf(c1));//0 1 1
+	System.out.println(s2.indexOf('a'));//0 1 1
 	
 
 }
