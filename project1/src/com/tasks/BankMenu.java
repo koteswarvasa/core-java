@@ -49,7 +49,6 @@ public class BankMenu {
 
 			switch (choice) {
 			case 1 -> checkBalance();
-		            
 			case 2 -> depositeMoney();
 			case 3 -> withdrawMoney();
 			case 4 -> System.out.println("Exit !!...");
