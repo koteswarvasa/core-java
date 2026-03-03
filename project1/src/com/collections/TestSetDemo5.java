@@ -15,6 +15,7 @@ public static void main(String[] args) {
 	set.add(11.6);
 	set.add(55.5);
 
+	
 //	ClassCastException: it is unchecked Exception 
 //			- Because 'Treeset' is allow only homogenous data only
 	System.out.println(set);

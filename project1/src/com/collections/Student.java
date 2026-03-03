@@ -14,7 +14,7 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public String toString() {
-		return "Student [rollNo=" + rollNo + ", name=" + name + ", marks=" + marks + "]";
+		return "rollNo=" + rollNo + ", name=" + name + ", marks=" + marks;
 	}
 
 	@Override

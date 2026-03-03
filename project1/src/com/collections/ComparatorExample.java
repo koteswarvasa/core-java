@@ -30,11 +30,17 @@ public class ComparatorExample {
 		
 		
 //		Comparator<Integer> comp =  (Integer x, Integer y) -> Integer.compare(y, x);
-		Comparator<Integer> comp = Comparator.comparingInt((Integer i) -> i).reversed();
+//		Comparator<Integer> comp = Comparator.comparingInt((Integer i) -> i).reversed();
+//		Comparator<Student> namesComp = (Student s1, Student s2) -> s1.name.compareTo(s2.name);
+//		Comparator<Student> namesComp = Comparator.comparing(s -> s.name,Comparator.nullsLast(Comparator.naturalOrder()));
+		Comparator<Student> namesComp = Comparator.comparing(s -> s.name);
+		Comparator<Student> marksComp = Comparator.comparing(s -> s.marks);
+		Comparator<Student> rollNoComp = Comparator.comparing(s -> s.rollNo);
 		
-		Integer[] arr = {2,3,1,7,5};
-		Arrays.sort(arr,comp);
-		System.out.println(Arrays.toString(arr));
+		
+//		Integer[] arr = {2,3,1,7,5};
+//		Arrays.sort(arr,comp);
+//		System.out.println(Arrays.toString(arr));
 		
 		
 		
@@ -50,9 +56,11 @@ public class ComparatorExample {
 		Student[] students = {new Student(101,"koti",300),
 							  new Student(105,"venkat",400),
 							  new Student(102,"naveen",500),
-							  new Student(104,"krishna",600)
+							  new Student(104,"krishna",600),
 		};
 		
+//		Arrays.sort(students,namesComp);
+//		System.out.println(Arrays.toString(students));
 //		for(Student student : students) {
 //			System.out.println(student);
 //		}
@@ -73,16 +81,16 @@ public class ComparatorExample {
 //		
 		
 //		names
-		Collections.sort(studentList);
+		Collections.sort(studentList,namesComp);
 		System.out.println(studentList);
 		
 //		marks
-//		Collections.sort(studentList);
-//		System.out.println(studentList);
+		Collections.sort(studentList,marksComp);
+		System.out.println(studentList);
 		
 //		rollNo
-//		Collections.sort(studentList);
-//		System.out.println(studentList);
+		Collections.sort(studentList,rollNoComp);
+		System.out.println(studentList);
 		
 		
 	}
