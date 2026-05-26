@@ -1,7 +1,3 @@
-// ===============================
-// AtmMainDriver.java
-// ===============================
-
 package com.consolebasedprojects.atm;
 
 import java.util.Scanner;
